@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Boğaziçi Game Jam 2026 | BGJ'26">
+    <meta property="og:description" content="48 saat, 1 tema, sayısız olasılık. Türkiye'nin en köklü Game Jam etkinliklerinden birinde yerini al!">
+    <meta property="og:image" content="images/bgj-preview.png">
+    <meta property="og:type" content="website">
     <title>Boğaziçi Game Jam 2026 | BGJ'26</title>
     
     <!-- Tailwind CSS -->
@@ -15,7 +19,6 @@
     
     <!-- Icons (Lucide) -->
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <script>
         tailwind.config = {
             theme: {
@@ -54,48 +57,7 @@
         }
     </script>
     
-    <style>
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0B0F19;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #4C1D95;
-            border-radius: 5px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #6D28D9;
-        }
-
-        /* Glassmorphism utilities */
-        .glass {
-            background: rgba(21, 28, 44, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .faq-answer {
-            transition: max-height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease;
-            max-height: 0;
-            opacity: 0;
-            overflow: hidden;
-            padding-top: 0;
-            padding-bottom: 0;
-        }
-        .faq-item.active .faq-answer {
-            max-height: 500px; /* Arbitrary large enough height */
-            opacity: 1;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-        .faq-item.active .faq-icon {
-            transform: rotate(180deg);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-bgj-dark text-slate-300 font-sans antialiased overflow-x-hidden selection:bg-bgj-primary selection:text-white">
 
@@ -120,6 +82,7 @@
                         <a href="#hakkimizda" class="hover:text-white transition-colors text-sm font-medium">Hakkımızda</a>
                         <a href="#program" class="hover:text-white transition-colors text-sm font-medium">Program</a>
                         <a href="#oduller" class="hover:text-white transition-colors text-sm font-medium">Ödüller</a>
+                        <a href="#merch" class="hover:text-white transition-colors text-sm font-medium">Merch</a>
                         <a href="#sponsorlar" class="hover:text-white transition-colors text-sm font-medium">Sponsorlar</a>
                         <a href="#ekibimiz" class="hover:text-white transition-colors text-sm font-medium">Ekibimiz</a>
                         <a href="#sss" class="hover:text-white transition-colors text-sm font-medium">SSS</a>
@@ -148,6 +111,7 @@
                 <a href="#hakkimizda" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-white/5">Hakkımızda</a>
                 <a href="#program" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-white/5">Program</a>
                 <a href="#oduller" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-white/5">Ödüller</a>
+                <a href="#merch" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-white/5">Merch</a>
                 <a href="#sponsorlar" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-white/5">Sponsorlar</a>
                 <a href="#sss" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-white/5">SSS</a>
                 <a href="#iletisim" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-white/5">İletişim</a>
@@ -196,7 +160,7 @@
             </div>
             
             <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up" style="animation-delay: 0.3s;">
-                <a href="https://forms.google.com/" target="_blank" class="px-8 py-4 rounded-full font-bold text-white bg-gradient-to-r from-bgj-primary to-bgj-secondary hover:from-purple-500 hover:to-cyan-400 transition-all text-lg flex items-center justify-center shadow-[0_0_15px_rgba(139,92,246,0.3)] hover:scale-105 transform">
+                <a href="https://docs.google.com/forms/d/1ZXV6ktdt-bLn6FuzHH6GHqi9lpfY4LKEIhb6iuSmQbk" target="_blank" class="px-8 py-4 rounded-full font-bold text-white bg-gradient-to-r from-bgj-primary to-bgj-secondary hover:from-purple-500 hover:to-cyan-400 transition-all text-lg flex items-center justify-center shadow-[0_0_15px_rgba(139,92,246,0.3)] hover:scale-105 transform">
                     Başvur
                 </a>
                 <a href="#hakkimizda" class="px-8 py-4 rounded-full font-bold text-white bg-white/10 hover:bg-white/20 border border-white/10 backdrop-blur-sm transition-all text-lg flex items-center justify-center gap-2 group">
@@ -211,7 +175,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Hakkımızda</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-bgj-primary to-bgj-secondary mx-auto rounded-full"></div>
+                <div class="gradient-bar mb-4"></div>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -238,7 +202,7 @@
                 </div>
                 <div class="relative">
                     <div class="absolute inset-0 bg-gradient-to-tr from-bgj-primary/20 to-bgj-secondary/20 rounded-3xl transform rotate-3 scale-105"></div>
-                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Game Jam" class="relative rounded-3xl shadow-2xl border border-white/10 object-cover h-[500px] w-full grayscale hover:grayscale-0 transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Önceki Game Jam etkinliklerinden geliştirici takımlar" class="relative rounded-3xl shadow-2xl border border-white/10 object-cover h-[500px] w-full grayscale hover:grayscale-0 transition-all duration-500">
                 </div>
             </div>
         </div>
@@ -248,7 +212,7 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Program</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-bgj-secondary to-bgj-primary mx-auto rounded-full mb-4"></div>
+                <div class="gradient-bar mb-4"></div>
             </div>
 
             <div class="glass rounded-3xl overflow-hidden border border-white/10">
@@ -261,20 +225,24 @@
                     </div>
                     <div class="p-6 space-y-4">
                         <div class="flex items-start gap-4">
-                            <div class="w-20 font-normal text-white flex-shrink-0">17:00</div>
-                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Kayıt ve Alana Yerleşim</div>
+                            <div class="w-20 font-normal text-white flex-shrink-0">16:00</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Açılış Konuşması ve Tema Duyurulması</div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="w-20 font-normal text-white flex-shrink-0">18:00</div>
-                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Açılış Konuşması & Tema Duyurusu</div>
+                            <div class="w-20 font-normal text-white flex-shrink-0">17:00</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Konuşma</div>
                         </div>
                         <div class="flex items-start gap-4">
                             <div class="w-20 font-normal text-white flex-shrink-0">19:00</div>
-                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Takım Kurma Etkinliği ve Networking</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Akşam yemeği</div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="w-20 font-normal text-white flex-shrink-0">20:00</div>
-                            <div class="text-white font-normal border-l border-white/10 pl-4">Gamejam Başlıyor!</div>
+                            <div class="w-20 font-normal text-white flex-shrink-0">21:00</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Icebreaker (Vampir Köylü Suggestion)</div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-20 font-normal text-white flex-shrink-0">23:00</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Atıştırmalık</div>
                         </div>
                     </div>
                 </div>
@@ -288,20 +256,32 @@
                     </div>
                     <div class="p-6 space-y-4">
                         <div class="flex items-start gap-4">
-                            <div class="w-20 font-normal text-white flex-shrink-0">10:00</div>
+                            <div class="w-20 font-normal text-white flex-shrink-0">03:00</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Horror Gamenight (suggestion)</div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-20 font-normal text-white flex-shrink-0">07:00</div>
                             <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Kahvaltı</div>
                         </div>
                         <div class="flex items-start gap-4">
+                            <div class="w-20 font-normal text-white flex-shrink-0">09:00</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">belki etkinlik (OST Trivia Suggestion)</div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-20 font-normal text-white flex-shrink-0">11:00</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Konuşma</div>
+                        </div>
+                        <div class="flex items-start gap-4">
                             <div class="w-20 font-normal text-white flex-shrink-0">13:00</div>
-                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Mentor Ziyaretleri ve Geri Bildirim Seansları</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Öğle Yemeği</div>
                         </div>
                         <div class="flex items-start gap-4">
                             <div class="w-20 font-normal text-white flex-shrink-0">19:00</div>
-                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Akşam Yemeği / Pizza Partisi</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Akşam yemeği</div>
                         </div>
                         <div class="flex items-start gap-4">
                             <div class="w-20 font-normal text-white flex-shrink-0">23:00</div>
-                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Icebreaker</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Çizerlerle Gartic.io</div>
                         </div>
                     </div>
                 </div>
@@ -315,28 +295,44 @@
                     </div>
                     <div class="p-6 space-y-4">
                         <div class="flex items-start gap-4">
-                            <div class="w-20 font-normal text-white flex-shrink-0">10:00</div>
+                            <div class="w-20 font-normal text-white flex-shrink-0">03:00</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">belki etkinlik (undetermined)</div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-20 font-normal text-white flex-shrink-0">07:00</div>
                             <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Kahvaltı</div>
                         </div>
                         <div class="flex items-start gap-4">
+                            <div class="w-20 font-normal text-white flex-shrink-0">09:00</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Konuşma</div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-20 font-normal text-white flex-shrink-0">12:00</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Varsa öğle yemeği</div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-20 font-normal text-white flex-shrink-0">14:00</div>
+                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Kapanış Konuşması</div>
+                        </div>
+                        <div class="flex items-start gap-4">
                             <div class="w-20 font-normal text-white flex-shrink-0">16:00</div>
-                            <div class="text-white font-normal border-l border-white/10 pl-4">Geliştirme Süreci Bitiyor (Klavye Bırak!)</div>
+                            <div class="text-white font-normal border-l border-white/10 pl-4">Kapanış</div>
                         </div>
                         <div class="flex items-start gap-4">
                             <div class="w-20 font-normal text-white flex-shrink-0">17:00</div>
-                            <div class="text-slate-300 font-normal border-l border-white/10 pl-4">Kapanış Konuşması</div>
+                            <div class="text-white font-normal border-l border-white/10 pl-4">Oyun Sunumları</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
     <section id="oduller" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Ödüller</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-bgj-primary to-bgj-secondary mx-auto rounded-full mb-6"></div>
+                <div class="gradient-bar mb-6"></div>
                 <p class="text-slate-400 max-w-2xl mx-auto">
                     Seçilen işlerin seviyesine uygun, tam geliştiricilere layık toplamda büyük bir havuz!
                 </p>
@@ -433,7 +429,34 @@
             </div>
         </div>
     </section>
+    <section id="merch" class="py-24 relative bg-bgj-dark border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Merch</h2>
+            <div class="gradient-bar mb-4"></div>
+            <p class="text-slate-400 max-w-2xl mx-auto">
+                Etkinlik anısını yaşatmak için özel tasarım BGJ'26 ürünlerimize göz atın.
+            </p>
+        </div>
 
+        <div class="flex flex-col md:flex-row justify-center gap-8 max-w-4xl mx-auto w-full">
+    <!-- Merch Item 1 -->
+    <div class="flex-1 glass p-8 rounded-3xl border border-white/10 hover:border-bgj-primary/40 transition-all group text-center flex flex-col items-center">
+        <div class="w-24 h-24 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:bg-bgj-primary/20 transition-colors">
+            <i data-lucide="shirt" class="w-12 h-12 text-slate-300 group-hover:text-bgj-primary transition-colors"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-2">BGJ'26 T-Shirt</h3>
+    </div>
+
+    <!-- Merch Item 2 -->
+    <div class="flex-1 glass p-8 rounded-3xl border border-white/10 hover:border-bgj-secondary/40 transition-all group text-center flex flex-col items-center">
+        <div class="w-24 h-24 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:bg-bgj-secondary/20 transition-colors">
+            <i data-lucide="coffee" class="w-12 h-12 text-slate-300 group-hover:text-bgj-secondary transition-colors"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-2">Özel Tasarım Bardak</h3>
+    </div>
+    </div>
+</section>
     <section id="sponsorlar" class="py-24 bg-bgj-card/50 relative border-y border-white/5 overflow-hidden">
         <!-- Arka Plan İnce Detay -->
         <div class="absolute inset-0 z-0 flex items-center justify-center opacity-5 pointer-events-none">
@@ -443,7 +466,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Sponsorlarımız</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-bgj-secondary to-bgj-primary mx-auto rounded-full"></div>
+                <div class="gradient-bar mb-4"></div>
                 <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
                     Bu değerli etkinliği hayata geçirmemizde bizimle aynı vizyonu paylaşan, gücümüze güç katan partnerlerimiz.
                 </p>
@@ -511,7 +534,7 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Sıkça Sorulan <span class="text-white">Sorular</span></h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-bgj-secondary to-bgj-primary mx-auto rounded-full"></div>
+                <div class="gradient-bar mx-auto mb-4"></div>
             </div>
 
             <div class="space-y-4">
@@ -522,7 +545,7 @@
                         <i data-lucide="chevron-down" class="w-5 h-5 text-bgj-secondary faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-answer px-6 bg-transparent">
-                        <p class="text-slate-400">Oyun geliştirmeye ilgi duyan, üniversite öğrencisi herkes Boğaziçi Game Jam'e başvurabilir. Deneyimli bir geliştirici olmanız şart değil, sadece hevesli olmanız yeterli!</p>
+                        <p class="text-slate-400">Oyun geliştirmeye ilgi duyan, üniversite öğrencisi herkes Boğaziçi Game Jam'e başvurabilir. </p>
                     </div>
                 </div>
 
@@ -553,7 +576,7 @@
                         <i data-lucide="chevron-down" class="w-5 h-5 text-bgj-secondary faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-answer px-6 bg-transparent">
-                        <p class="text-slate-400">Evet, alanda size sadece çalışma masası, sandalye, internet ve elektrik sağlıyoruz. Oyun geliştirmek için kullanacağınız bilgisayar, tablet ve diğer tüm kişisel donanımlarınızı yanınızda getirmelisiniz.</p>
+                        <p class="text-slate-400">Evet, oyun geliştirmek için kullanacağınız bilgisayar, tablet ve diğer tüm kişisel donanımlarınızı yanınızda getirmelisiniz.</p>
                     </div>
                 </div>
 
@@ -586,7 +609,7 @@
                         <i data-lucide="chevron-down" class="w-5 h-5 text-bgj-secondary faq-icon transition-transform duration-300"></i>
                     </div>
                     <div class="faq-answer px-6 bg-transparent">
-                        <p class="text-slate-400">Oyun yükleme süreci <b>itch.io</b> platformu üzerinden yapılacaktır. Etkinlik başladığında Boğaziçi Game Jam 2026 itch.io sayfası aktif edilecek ve oyunları yükleme linki discord üzerinden tüm takımlarla paylaşılacaktır.</p>
+                        <p class="text-slate-400">Oyun yükleme süreci <b>itch.io</b> platformu üzerinden yapılacaktır. Etkinlik başladığında Boğaziçi Game Jam 2026 itch.io sayfası aktif edilecek ve oyunları yükleme linki whatsapp grubu üzerinden paylaşılacaktır.</p>
                     </div>
                 </div>
             </div>
@@ -597,7 +620,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Ekibimiz</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-bgj-primary to-bgj-secondary mx-auto rounded-full mb-6"></div>
+                <div class="gradient-bar mb-6"></div>
                 <p class="text-slate-400 max-w-2xl mx-auto">
                     Aylardır bu etkinliği sizin için hazırlayan COMPEC Oyun Geliştirme Alt Kurulu liderleri.
                 </p>
@@ -650,9 +673,6 @@
                         <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-colors" title="Instagram">
                             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/instagram.svg" alt="Instagram" class="w-5 h-5 filter invert opacity-70 hover:opacity-100">
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-colors" title="Discord">
-                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/discord.svg" alt="Discord" class="w-5 h-5 filter invert opacity-70 hover:opacity-100">
-                        </a>
                         <a href="https://wa.me/1234567890" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-colors" title="WhatsApp">
                             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/whatsapp.svg" alt="WhatsApp" class="w-5 h-5 filter invert opacity-70 hover:opacity-100">
                         </a>
@@ -668,6 +688,7 @@
                         <li><a href="#hakkimizda" class="text-slate-400 hover:text-bgj-secondary transition-colors text-sm">Hakkımızda</a></li>
                         <li><a href="#program" class="text-slate-400 hover:text-bgj-secondary transition-colors text-sm">Program</a></li>
                         <li><a href="#oduller" class="text-slate-400 hover:text-bgj-secondary transition-colors text-sm">Ödüller</a></li>
+                        <li><a href="#merch" class="text-slate-400 hover:text-bgj-secondary transition-colors text-sm">Merch</a></li>
                         <li><a href="#sponsorlar" class="text-slate-400 hover:text-bgj-secondary transition-colors text-sm">Sponsorlar</a></li>
                     </ul>
                 </div>
@@ -704,72 +725,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-
-        // Navbar blur and border on scroll
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('navbar');
-            if (window.scrollY > 20) {
-                nav.classList.add('shadow-lg', 'bg-bgj-dark/90');
-                nav.classList.remove('bg-slate-900/80');
-            } else {
-                nav.classList.remove('shadow-lg', 'bg-bgj-dark/90');
-                nav.classList.add('bg-slate-900/80');
-            }
-        });
-
-        // Mobile Menu Toggle
-        const mobileBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        mobileBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when a link is clicked
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // Countdown Timer Logic
-        const countDownDate = new Date("Oct 23, 2026 10:00:00").getTime();
-
-        const x = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = countDownDate - now;
-
-            // Zaman hesaplamaları
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Elementlerin var olup olmadığını kontrol ederek güncelle
-            const daysEl = document.getElementById("days");
-            if (daysEl) {
-                daysEl.innerHTML = days < 10 ? "0" + days : days;
-                document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
-                document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
-                document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
-            }
-
-            // Süre dolduğunda
-            if (distance < 0) {
-                clearInterval(x);
-                if(daysEl) {
-                    daysEl.innerHTML = "00";
-                    document.getElementById("hours").innerHTML = "00";
-                    document.getElementById("minutes").innerHTML = "00";
-                    document.getElementById("seconds").innerHTML = "00";
-                }
-            }
-        }, 1000);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

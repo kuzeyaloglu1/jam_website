@@ -1,0 +1,48 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #0B0F19;
+}
+::-webkit-scrollbar-thumb {
+    background: #4C1D95;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6D28D9;
+}
+
+/* Glassmorphism utilities */
+.glass {
+    background: rgba(21, 28, 44, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq-answer {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+.gradient-bar {
+    width: 6rem; /* w-24 */
+    height: 0.25rem; /* h-1 */
+    background: linear-gradient(to right, #8B5CF6, #06B6D4); /* from-bgj-primary to-bgj-secondary */
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    border-radius: 9999px; /* rounded-full */
+}
