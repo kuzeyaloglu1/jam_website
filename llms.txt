@@ -1,0 +1,22 @@
+# Boğaziçi Game Jam 2026
+
+> Boğaziçi Üniversitesi Bilişim Kulübü (COMPEC) tarafından düzenlenen 48 saatlik, yüz yüze oyun geliştirme maratonunun resmi web sitesi.
+
+Boğaziçi Game Jam 2026, 23 Ekim 2026 saat 10.00 ile 25 Ekim 2026 saat 10.00 arasında Boğaziçi Üniversitesi Güney Kampüs'te düzenlenir. Etkinlik ücretsizdir. Katılımcılar açıklanan tema etrafında bireysel veya takım olarak oyun geliştirir ve çalışmalarını jüriye sunar.
+
+## Resmi bağlantılar
+
+- [Etkinlik web sitesi](https://bogazicigamejam.com/): Program, ödüller, sponsorlar, sık sorulan sorular ve iletişim bilgileri.
+- [Başvuru formu](https://docs.google.com/forms/d/1ZXV6ktdt-bLn6FuzHH6GHqi9lpfY4LKEIhb6iuSmQbk/viewform): Boğaziçi Game Jam 2026 katılım başvurusu.
+- [Organizatör COMPEC](https://compec.org/): Boğaziçi Üniversitesi Bilişim Kulübü resmi web sitesi.
+- [Boğaziçi Game Jam itch.io](https://itch.io/jam/bogazici-game-jam): Geçmiş jam sayfası ve oyunlar.
+
+## Temel bilgiler
+
+- Etkinlik: Boğaziçi Game Jam 2026 (BGJ'26)
+- Tarih: 23–25 Ekim 2026
+- Süre: 48 saat
+- Yer: Boğaziçi Üniversitesi Güney Kampüs, Bebek, Beşiktaş, İstanbul, Türkiye
+- Dil: Türkçe
+- Katılım ücreti: Ücretsiz
+- Organizatör: Boğaziçi Üniversitesi Bilişim Kulübü (COMPEC)

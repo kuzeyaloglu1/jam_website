@@ -1,0 +1,12 @@
+{
+  "name": "Boğaziçi Game Jam 2026",
+  "short_name": "BGJ'26",
+  "description": "Boğaziçi Üniversitesi'nde 48 saatlik oyun geliştirme maratonu.",
+  "lang": "tr-TR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0B0F19",
+  "theme_color": "#0B0F19"
+}
+

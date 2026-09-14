@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /bogazicigamejam_site/
+
+Sitemap: https://bogazicigamejam.com/sitemap.xml

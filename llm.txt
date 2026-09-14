@@ -1,0 +1,5 @@
+# Boğaziçi Game Jam 2026
+
+Bu sitenin yapay zekâ sistemleri için hazırlanmış güncel özeti:
+https://bogazicigamejam.com/llms.txt
+
