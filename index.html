@@ -1039,20 +1039,6 @@
             -webkit-mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.45) 44%, transparent 92%);
             mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.45) 44%, transparent 92%);
         }
-        .bgj-awards-section::after {
-            content: "BGJ'26";
-            position: absolute;
-            right: -18px;
-            top: 46px;
-            font-family: 'Oxanium', sans-serif;
-            font-size: clamp(74px, 12vw, 170px);
-            font-weight: 800;
-            line-height: 1;
-            letter-spacing: -.08em;
-            color: rgba(26, 137, 169, .055);
-            pointer-events: none;
-            white-space: nowrap;
-        }
         .bgj-awards-shell {
             width: min(1160px, calc(100% - 48px));
             margin: 0 auto;
@@ -2865,7 +2851,7 @@
         <img src="images/bgj26-hero.png" alt="Boğaziçi Game Jam 2026" class="bgj-hero-image">
 
         <div class="bgj-countdown-wrap" aria-label="Etkinliğe kalan süre">
-            <a class="bgj-apply-btn" href="https://docs.google.com/forms/d/1ZXV6ktdt-bLn6FuzHH6GHqi9lpfY4LKEIhb6iuSmQbk/viewform" target="_blank" rel="noopener noreferrer">Başvur</a>
+            <a class="bgj-apply-btn" href="https://docs.google.com/forms/d/1ZXV6ktdt-bLn6FuzHH6GHqi9lpfY4LKEIhb6iuSmQbk" target="_blank" rel="noopener noreferrer">Başvur</a>
             <div class="bgj-countdown-label">Etkinliğe Kalan Süre</div>
             <div class="bgj-countdown">
                 <div class="bgj-countdown-unit">
@@ -2986,7 +2972,6 @@
         <div class="bgj-awards-shell">
             <header class="bgj-awards-head">
                 <div class="bgj-awards-head-left">
-                    <div class="bgj-awards-kicker">BGJ'26</div>
                     <h2>Ödüller</h2>
                 </div>
                 <p>Seçilen işlerin seviyesine uygun, tam geliştiricilere layık toplamda büyük bir havuz!</p>
@@ -3236,7 +3221,7 @@
         </div>
     </section>
 
-    <section id="ekibimiz" class="py-24 relative border-t border-white/5 bg-bgj-card/30">
+    <section id="ekibimiz" class="py-24 relative border-t border-white/5 bg-[#CC6600]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Ekibimiz</h2>
@@ -3336,7 +3321,9 @@
                 <p>&copy; 2026 Boğaziçi Üniversitesi Bilişim Kulübü (COMPEC). Tüm hakları saklıdır.</p>
                 <div class="flex items-center gap-1.5 text-slate-400">
                     <span>Designed & Developed by</span>
-                    <span class="font-semibold text-slate-300 underline underline-offset-4 decoration-white/50">Mihal Gazi</span>
+                    <span class="font-semibold text-slate-300 underline underline-offset-4 decoration-white/50">Kuzey Aloğlu</span>
+                    <span>and</span>
+                    <span class="font-semibold text-slate-300 underline underline-offset-4 decoration-white/50">Mustafa Aktaş</span>
                 </div>
                 <div class="flex space-x-4">
                     <a href="#" class="hover:text-slate-300">Gizlilik Politikası</a>
@@ -3346,109 +3333,5 @@
         </div>
     </footer>
     <script src="script.js"></script>
-
-    <script>
-        // Prototype navigation interactions. Existing section IDs/content are preserved.
-        document.addEventListener('DOMContentLoaded', function () {
-            if (window.lucide && typeof window.lucide.createIcons === 'function') { window.lucide.createIcons(); }
-            const navWrap = document.getElementById('navbar');
-            const toggle = document.getElementById('bgj-mobile-toggle');
-            const menu = document.getElementById('bgj-mobile-menu');
-            const mobileLinks = document.querySelectorAll('.bgj-mobile-link');
-
-            function setMenu(open) {
-                if (!toggle || !menu) return;
-                toggle.classList.toggle('is-open', open);
-                menu.classList.toggle('is-open', open);
-                toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-                toggle.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
-            }
-
-            if (toggle) {
-                toggle.addEventListener('click', function () {
-                    setMenu(!menu.classList.contains('is-open'));
-                });
-            }
-
-            mobileLinks.forEach(function (link) {
-                link.addEventListener('click', function () { setMenu(false); });
-            });
-
-            window.addEventListener('resize', function () {
-                if (window.innerWidth > 860) setMenu(false);
-            });
-
-            function handleScroll() {
-                if (navWrap) navWrap.classList.toggle('is-scrolled', window.scrollY > 24);
-            }
-            handleScroll();
-            window.addEventListener('scroll', handleScroll, { passive: true });
-        });
-    </script>
-
-
-<script>
-(() => {
-  const clock = document.querySelector('[data-sponsor-clock]');
-  if (!clock || clock.dataset.ready === '1') return;
-  clock.dataset.ready = '1';
-
-  const nodes = [...clock.querySelectorAll('[data-sponsor-index]')];
-  const hand = clock.querySelector('.bgj-clock-hand');
-  const labelEl = document.querySelector('[data-active-sponsor-label]');
-  const nameEl = document.querySelector('[data-active-sponsor-name]');
-  const linkEl = document.querySelector('[data-active-sponsor-link]');
-  if (!nodes.length || !hand) return;
-
-  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const angles = nodes.map(node => Number((node.style.getPropertyValue('--angle') || '0').replace('deg','')) || 0);
-  let lastActive = -1;
-  let raf = 0;
-  const duration = 25000;
-  const started = performance.now();
-
-  const setActive = (i) => {
-    if (i === lastActive) return;
-    lastActive = i;
-    nodes.forEach((node, idx) => node.classList.toggle('is-active', idx === i));
-    const node = nodes[i];
-    const name = node.dataset.name || node.getAttribute('aria-label') || 'Sponsor';
-    const url = node.dataset.url || node.href;
-    const tier = node.dataset.tier || '';
-    if (labelEl) labelEl.textContent = tier;
-    if (nameEl) nameEl.textContent = name;
-    if (linkEl) {
-      linkEl.href = url;
-      linkEl.setAttribute('aria-label', name + ' web sitesini ziyaret et');
-    }
-  };
-
-  const nearestIndex = (angle) => {
-    let best = 0;
-    let bestDiff = Infinity;
-    angles.forEach((a, i) => {
-      const diff = Math.abs(((angle - a + 540) % 360) - 180);
-      if (diff < bestDiff) { bestDiff = diff; best = i; }
-    });
-    return best;
-  };
-
-  const render = (now) => {
-    const angle = reduce ? 0 : (((now - started) % duration) / duration) * 360;
-    hand.style.transform = `rotate(${angle}deg)`;
-    setActive(nearestIndex(angle));
-    if (!reduce) raf = requestAnimationFrame(render);
-  };
-
-  nodes.forEach((node, i) => {
-    node.addEventListener('mouseenter', () => setActive(i));
-    node.addEventListener('focus', () => setActive(i));
-  });
-
-  render(performance.now());
-  window.addEventListener('pagehide', () => raf && cancelAnimationFrame(raf), { once:true });
-})();
-</script>
-
 </body>
 </html>
