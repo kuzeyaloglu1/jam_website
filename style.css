@@ -7,7 +7,7 @@
     background: #0B0F19; 
 }
 ::-webkit-scrollbar-thumb { 
-    background: #06B6D4;
+    background: #06B6D4; /* Temanıza uygun turkuaz rengi eklendi */
     border-radius: 5px; 
 }
 /* Glassmorphism utilities */
