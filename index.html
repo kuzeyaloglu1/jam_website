@@ -2340,8 +2340,8 @@
         .bgj-faq-section .faq-item h4 { color:#08283b !important; font-weight:800 !important; }
         .bgj-faq-section .faq-icon { color:#08283b !important; }
         .bgj-faq-section .faq-item.active {
-            background:#f8ffe6 !important;
-            border-color:#08283b !important;
+            background: rgba(255,255,255,.20) !important;
+            border-color: #08283b !important;
         }
         .bgj-faq-section .faq-answer p { color:rgba(8,40,59,.78) !important; }
 
@@ -3060,12 +3060,12 @@
             </div>
         </div>
     </section>
-    <section id="merch" class="py-24 relative bg-bgj-dark border-t border-white/5">
+    <section id="merch" class="py-24 relative bg-[#6666FF] border-t border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Merch</h2>
-            <div class="gradient-bar mb-4"></div>
-            <p class="text-slate-400 max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-heading font-bold text-black mb-4">Merch</h2>
+            <div class="w-16 h-1 bg-black mx-auto rounded-full mb-6 w-24"></div>
+            <p class="text-black max-w-2xl mx-auto">
                 Etkinlik anısını yaşatmak için özel tasarım BGJ'26 ürünlerimize göz atın.
             </p>
         </div>
@@ -3139,7 +3139,7 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Sıkça Sorulan <span class="text-white">Sorular</span></h2>
-                <div class="gradient-bar mx-auto mb-4"></div>
+                <div class="w-16 h-1 bg-black mx-auto rounded-full mb-6 w-24"></div>
             </div>
 
             <div class="space-y-4">
@@ -3206,7 +3206,16 @@
                         <p class="text-slate-400">Etkinlik boyunca sponsorlarımızın desteğiyle çeşitli ikramlar, atıştırmalıklar ve ana öğünler sağlanacaktır. Alanımız 48 saat boyunca açık olacağı için dinlenmek isteyen katılımcılar uyku tulumlarını getirebilirler.</p>
                     </div>
                 </div>
-
+                <!-- FAQ Item 6 -->
+                <div class="faq-item glass rounded-2xl border border-white/10 overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+                    <div class="px-6 py-5 flex items-center justify-between bg-white/5 hover:bg-white/10 transition-colors">
+                        <h4 class="text-lg font-medium text-white">Merch ücretsiz mi?</h4>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-bgj-secondary faq-icon transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 bg-transparent">
+                        <p class="text-slate-400">Evet, merchimiz her katılımcıya ücretsiz olarak dağıtılacaktır.</p>
+                    </div>
+                </div>
                 <!-- FAQ Item 7 (itch.io) -->
                 <div class="faq-item glass rounded-2xl border border-white/10 overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
                     <div class="px-6 py-5 flex items-center justify-between bg-white/5 hover:bg-white/10 transition-colors">
@@ -3224,9 +3233,9 @@
     <section id="ekibimiz" class="py-24 relative border-t border-white/5 bg-[#8B5CF6]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Ekibimiz</h2>
-                <div class="gradient-bar mb-6"></div>
-                <p class="text-slate-400 max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-heading font-bold text-black mb-4">Ekibimiz</h2>
+                <div class="w-16 h-1 bg-black mx-auto rounded-full mb-6 w-24"></div>
+                <p class="max-w-2xl mx-auto text-black">
                     Aylardır bu etkinliği sizin için hazırlayan COMPEC Oyun Geliştirme Alt Kurulu liderleri.
                 </p>
             </div>
@@ -3234,7 +3243,7 @@
             <!-- Direktör -->
             <div class="flex justify-center mb-12">
                 <div class="glass p-6 rounded-3xl border border-bgj-primary/30 flex flex-col items-center text-center w-full max-w-sm hover:border-bgj-primary transition-colors group">
-                    <img src="https://ui-avatars.com/api/?name=Ismet+Efe+Sahin&background=8B5CF6&color=fff&size=128" alt="İsmet Efe Şahin" class="w-24 h-24 rounded-full mb-4 border-2 border-bgj-primary group-hover:scale-105 transition-transform">
+                    <img src="images/ismet.jpeg" alt="İsmet Efe Şahin" class="w-24 h-24 rounded-full mb-4 border-2 border-bgj-primary group-hover:scale-105 transition-transform">
                     <h3 class="text-xl font-bold text-white mb-1">İsmet Efe Şahin</h3>
                     <span class="text-bgj-primary font-medium text-sm uppercase tracking-wider">Direktör</span>
                 </div>
@@ -3243,20 +3252,20 @@
             <!-- Liderler -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
                 <!-- Lider 1 -->
-                <div class="glass p-6 rounded-3xl border border-white/10 flex flex-col items-center text-center hover:border-white/30 transition-colors group">
-                    <img src="https://ui-avatars.com/api/?name=Kuzey+Aloglu&background=06B6D4&color=fff&size=128" alt="Kuzey Aloğlu" class="w-20 h-20 rounded-full mb-4 border-2 border-bgj-secondary/50 group-hover:border-bgj-secondary transition-colors">
+                <div class="glass p-6 rounded-3xl border border-white/10 flex flex-col items-center text-center hover:border-bgj-primary transition-colors group">
+                    <img src="images/kuzey.jpeg" alt="Kuzey Aloğlu" class="w-20 h-20 rounded-full mb-4 border-2 border-bgj-secondary/50 group-hover:border-bgj-secondary transition-colors">
                     <h3 class="text-lg font-bold text-white mb-1">Kuzey Aloğlu</h3>
                     <span class="text-slate-400 text-sm">Lider</span>
                 </div>
                 <!-- Lider 2 -->
-                <div class="glass p-6 rounded-3xl border border-white/10 flex flex-col items-center text-center hover:border-white/30 transition-colors group">
-                    <img src="https://ui-avatars.com/api/?name=Emine+Elif+Tosun&background=06B6D4&color=fff&size=128" alt="Emine Elif Tosun" class="w-20 h-20 rounded-full mb-4 border-2 border-bgj-secondary/50 group-hover:border-bgj-secondary transition-colors">
+                <div class="glass p-6 rounded-3xl border border-white/10 flex flex-col items-center text-center hover:border-bgj-primary transition-colors group">
+                    <img src="images/emine-elif.jpeg" alt="Emine Elif Tosun" class="w-20 h-20 rounded-full mb-4 border-2 border-bgj-secondary/50 group-hover:border-bgj-secondary transition-colors">
                     <h3 class="text-lg font-bold text-white mb-1">Emine Elif Tosun</h3>
                     <span class="text-slate-400 text-sm">Lider</span>
                 </div>
                 <!-- Lider 3 -->
-                <div class="glass p-6 rounded-3xl border border-white/10 flex flex-col items-center text-center hover:border-white/30 transition-colors group">
-                    <img src="https://ui-avatars.com/api/?name=Ibrahim+Haluk+Celik&background=06B6D4&color=fff&size=128" alt="İbrahim Haluk Çelik" class="w-20 h-20 rounded-full mb-4 border-2 border-bgj-secondary/50 group-hover:border-bgj-secondary transition-colors">
+                <div class="glass p-6 rounded-3xl border border-white/10 flex flex-col items-center text-center hover:border-bgj-primary transition-colors group">
+                    <img src="images/haluk.jpeg" alt="İbrahim Haluk Çelik" class="w-20 h-20 rounded-full mb-4 border-2 border-bgj-secondary/50 group-hover:border-bgj-secondary transition-colors">
                     <h3 class="text-lg font-bold text-white mb-1">İbrahim Haluk Çelik</h3>
                     <span class="text-slate-400 text-sm">Lider</span>
                 </div>
@@ -3324,9 +3333,6 @@
                     <span class="font-semibold text-slate-300 underline underline-offset-4 decoration-white/50">Kuzey Aloğlu</span>
                     <span>and</span>
                     <span class="font-semibold text-slate-300 underline underline-offset-4 decoration-white/50">Mustafa Aktaş</span>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-slate-300">Etkinlik Kuralları</a>
                 </div>
             </div>
         </div>
