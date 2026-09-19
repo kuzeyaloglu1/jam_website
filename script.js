@@ -89,7 +89,12 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!nodes.length || !hand) return;
 
   const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const angles = nodes.map(node => Number((node.style.getPropertyValue('--angle') || '0').replace('deg','')) || 0);
+  const angles = nodes.map((node, i) => {
+    const angle = (360 / nodes.length) * i;
+    node.style.setProperty('--angle', `${angle}deg`);
+    node.style.setProperty('--neg-angle', `-${angle}deg`);
+    return angle;
+});
   let lastActive = -1;
   let raf = 0;
   const duration = 25000;
