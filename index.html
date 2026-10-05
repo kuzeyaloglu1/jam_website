@@ -1046,6 +1046,7 @@
             z-index: 2;
         }
         .bgj-awards-head {
+            position: relative;
             display: grid;
             grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
             gap: 64px;
@@ -1053,6 +1054,16 @@
             margin-bottom: 66px;
             padding-bottom: 24px;
             border-bottom: 2px solid #0d2a39;
+        }
+        .bgj-awards-head::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 84px;
+            height: 4px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #b8d84c, #1686a6);
         }
         .bgj-awards-head-left { min-width: 0; }
         .bgj-awards-kicker {
@@ -2819,6 +2830,7 @@
                 <a href="#hakkimizda" class="bgj-nav-link">Hakkımızda</a>
                 <a href="#program" class="bgj-nav-link">Program</a>
                 <a href="#oduller" class="bgj-nav-link">Ödüller</a>
+                <a href="#juriler" class="bgj-nav-link">Jüriler</a>
                 <a href="#sponsorlar" class="bgj-nav-link">Sponsorlar</a>
                 <a href="#ekibimiz" class="bgj-nav-link">Ekibimiz</a>
                 <a href="#sss" class="bgj-nav-link">SSS</a>
@@ -2836,6 +2848,7 @@
                 <a href="#hakkimizda" class="bgj-nav-link bgj-mobile-link">Hakkımızda</a>
                 <a href="#program" class="bgj-nav-link bgj-mobile-link">Program</a>
                 <a href="#oduller" class="bgj-nav-link bgj-mobile-link">Ödüller</a>
+                <a href="#juriler" class="bgj-nav-link">Jüriler</a>
                 <a href="#sponsorlar" class="bgj-nav-link bgj-mobile-link">Sponsorlar</a>
                 <a href="#ekibimiz" class="bgj-nav-link bgj-mobile-link">Ekibimiz</a>
                 <a href="#sss" class="bgj-nav-link bgj-mobile-link">SSS</a>
@@ -2986,11 +2999,7 @@
                     </div>
                     <div class="bgj-award-main-list">
                         <ul>
-                            <li>Sony Playstation 5 Slim</li>
-                            <li>20 Adet 20$ Steam Kodu</li>
-                            <li>Samsung Odyssey G4 25&quot; Monitör</li>
-                            <li>Logitech G Pro X Superlight 2 Mouse</li>
-                            <li>Razer Barracuda X Kablosuz Kulaklık</li>
+                            <li>Sony PlayStation 5 Slim Digital</li>
                         </ul>
                     </div>
                 </article>
@@ -2999,11 +3008,10 @@
                     <article class="bgj-award-item">
                         <div class="bgj-award-index">02</div>
                         <div class="bgj-award-item-content">
-                            <div class="bgj-award-visual"><img src="images/award-sound.webp" alt="En İyi Ses Tasarım ödülü illüstrasyonu"></div>
-                            <h3>En İyi Ses Tasarım</h3>
+                            <div class="bgj-award-visual"><img src="images/award-sound.webp" alt="En Yaratıcı / Özgün Tema ödülü illüstrasyonu"></div>
+                            <h3>En Yaratıcı / Özgün Tema</h3>
                             <ul>
-                                <li>Beyerdynamic DT 990 Pro</li>
-                                <li>DJI Mic Mini 2 (2 TX + 1 RX)</li>
+                                <li>Microsoft Xbox Series S</li>
                             </ul>
                         </div>
                     </article>
@@ -3011,54 +3019,82 @@
                     <article class="bgj-award-item">
                         <div class="bgj-award-index">03</div>
                         <div class="bgj-award-item-content">
-                            <div class="bgj-award-visual"><img src="images/award-visual.webp" alt="En İyi Görüntü Tasarım ödülü illüstrasyonu"></div>
-                            <h3>En İyi Görüntü Tasarım</h3>
+                            <div class="bgj-award-visual"><img src="images/award-sound.webp" alt="En İyi Ses Tasarımı ödülü illüstrasyonu"></div>
+                            <h3>En İyi Ses Tasarımı</h3>
                             <ul>
-                                <li>Huion Kamvas 13 IPS Grafik Tablet</li>
+                                <li>DJI Mic Mini 2S</li>
+                                <li>Razer Kulaklık</li>
                             </ul>
                         </div>
                     </article>
-
-                    <article class="bgj-award-item">
+                     <article class="bgj-award-item">
                         <div class="bgj-award-index">04</div>
                         <div class="bgj-award-item-content">
-                            <div class="bgj-award-visual"><img src="images/award-creative.webp" alt="En Yaratıcı Özgün Tema ödülü illüstrasyonu"></div>
-                            <h3>En Yaratıcı (Özgün Tema)</h3>
+                            <div class="bgj-award-visual"><img src="images/award-visual.webp" alt="En İyi Görüntü Tasarımı ödülü illüstrasyonu"></div>
+                            <h3>En İyi Görüntü Tasarımı</h3>
                             <ul>
-                                <li>Logitech G PRO X 60 Oyun Klavyesi</li>
+                                <li>Samsung 27&quot; Odyssey G4 Monitör</li>
                             </ul>
                         </div>
                     </article>
-
+                  
                     <article class="bgj-award-item">
                         <div class="bgj-award-index">05</div>
                         <div class="bgj-award-item-content">
-                            <div class="bgj-award-visual"><img src="images/award-immersive.webp" alt="En İçine Çeken Oyun ödülü illüstrasyonu"></div>
-                            <h3>En İçine Çeken Oyun</h3>
-                            <p class="bgj-award-item-note">Hikaye, Worldbuilding, Atmosfer odaklı</p>
+                            <div class="bgj-award-visual"><img src="images/award-immersive.webp" alt="En İçine Çeken Atmosfer ödülü illüstrasyonu"></div>
+                            <h3>En İçine Çeken Atmosfer</h3>
                             <ul>
-                                <li>Logitech G Pro X Superlight 2</li>
-                                <li>Divoom Timesgate 5 Akıllı Saat</li>
+                                <li>Logitech G Pro X60 Klavye</li>
                             </ul>
                         </div>
                     </article>
 
-                    <article class="bgj-award-item">
+   
+                      <article class="bgj-award-item">
                         <div class="bgj-award-index">06</div>
                         <div class="bgj-award-item-content">
-                            <div class="bgj-award-visual"><img src="images/award-honorable.webp" alt="Honorable Mention ödülü illüstrasyonu"></div>
-                            <h3>Honorable Mention</h3>
+                            <div class="bgj-award-visual"><img src="images/award-honorable.webp" width="100" height="100" alt="Mansiyon / Jüri Özel ödülü illüstrasyonu"></div>
+                            <h3>Mansiyon / Jüri Özel</h3>
                             <ul>
-                                <li>Razer Barracuda X Kulaklık</li>
-                                <li>Sürpriz Steam Kodları ve Mousepad</li>
+                                <li>Samsung 1TB T9 SSD + SteelSeries Apex 3</li>
                             </ul>
                         </div>
                     </article>
+
                 </div>
             </div>
         </div>
     </section>
-
+    <section id="juriler" class="relative w-full border-t-2 border-black bg-gradient-to-b from-yellow-100 via-gray-100 to-blue-100 px-6 py-24 font-sans md:px-12 lg:px-20">
+        <h2 class="mb-3 text-center font-sans text-6xl font-bold text-gray-900 md:text-7xl">Jürilerimiz</h2>
+        <p class="mb-10 text-center text-lg font-semibold text-gray-700">Etkinliğimizin olmazsa olmazı jürilerimiz</p>
+        <div class="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="jury-block flex min-h-[240px] w-full flex-col items-center justify-center rounded-xl bg-gray-300 p-6 text-center shadow-md transition-transform duration-300 ease-out hover:-translate-y-2">
+                <img class="mb-4 h-36 w-36 rounded-full object-cover" src="images/buraksahin.webp" alt="Burak Oyunda">
+                <p class="text-lg font-semibold text-gray-900">Burak Oyunda</p>
+            </div>
+            <div class="jury-block flex min-h-[240px] w-full flex-col items-center justify-center rounded-xl bg-gray-300 p-6 text-center shadow-md transition-transform duration-300 ease-out hover:-translate-y-2">
+                <img class="mb-4 h-36 w-36 rounded-full object-cover" src="images/erankucuk.webp" alt="Eran Küçük">
+                <p class="text-lg font-semibold text-gray-900">Eran Küçük</p>
+            </div>
+            <div class="jury-block flex min-h-[240px] w-full flex-col items-center justify-center rounded-xl bg-gray-300 p-6 text-center shadow-md transition-transform duration-300 ease-out hover:-translate-y-2">
+                <img class="mb-4 h-36 w-36 rounded-full object-cover" src="images/yigiteren.webp" alt="Yiğit Eren">
+                <p class="text-lg font-semibold text-gray-900">Yiğit Eren</p>
+            </div>
+            <div class="jury-block flex min-h-[240px] w-full flex-col items-center justify-center rounded-xl bg-gray-300 p-6 text-center shadow-md transition-transform duration-300 ease-out hover:-translate-y-2">
+                <img class="mb-4 h-36 w-36 rounded-full object-cover" src="images/yusuftasci.jpg" alt="Yusuf Taşçı">
+                <p class="text-lg font-semibold text-gray-900">Yusuf Taşçı</p>
+            </div>
+            <div class="jury-block flex min-h-[240px] w-full flex-col items-center justify-center rounded-xl bg-gray-300 p-6 text-center shadow-md transition-transform duration-300 ease-out hover:-translate-y-2">
+                <img class="mb-4 h-36 w-36 rounded-full object-cover" src="images/ezgidaltiparmak.webp" alt="Ezgi Demir Altıparmak">
+                <p class="text-lg font-semibold text-gray-900">Ezgi Demir Altıparmak</p>
+            </div>
+            <div class="jury-block flex min-h-[240px] w-full flex-col items-center justify-center rounded-xl bg-gray-300 p-6 text-center shadow-md transition-transform duration-300 ease-out hover:-translate-y-2">
+                <img class="mb-4 h-36 w-36 rounded-full object-cover" src="images/tugceardadogan.webp" alt="Tuğçe Arda Doğan">
+                <p class="text-lg font-semibold text-gray-900">Tuğçe Arda Doğan</p>
+            </div>
+        </div>
+    </section>
     <section id="sponsorlar" class="bgj-sponsors-section bgj-sponsor-clock-section">
         <div class="bgj-sponsor-clock-shell">
             <div class="bgj-sponsor-clock-copy">
@@ -3266,7 +3302,7 @@
                         İletişim bilgileri ve sosyal medya hesaplarımızdan bize ulaşabilirsiniz. Her türlü soru, öneri ve geri bildiriminiz bizim için değerlidir.
                     </p>
                     <div class="flex space-x-4 items-center">
-                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-colors" title="Instagram">
+                        <a href="https://www.instagram.com/bogazicigamejam/" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-colors" title="Instagram">
                             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/instagram.svg" alt="Instagram" class="w-5 h-5 filter invert opacity-70 hover:opacity-100">
                         </a>
                         <a href="https://wa.me/1234567890" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-colors" title="WhatsApp">
@@ -3284,6 +3320,7 @@
                         <li><a href="#hakkimizda" class="text-slate-400 hover:text-bgj-secondary transition-colors text-sm">Hakkımızda</a></li>
                         <li><a href="#program" class="text-slate-400 hover:text-bgj-secondary transition-colors text-sm">Program</a></li>
                         <li><a href="#oduller" class="text-slate-400 hover:text-bgj-secondary transition-colors text-sm">Ödüller</a></li>
+                        <li><a href="#juriler" class="text-slate-400 hover:text-bgj-secondary transition-colors text-sm">Jüriler</a></li>
                         <li><a href="#sponsorlar" class="text-slate-400 hover:text-bgj-secondary transition-colors text-sm">Sponsorlar</a></li>
                     </ul>
                 </div>
@@ -3316,6 +3353,7 @@
                     <span class="font-semibold text-slate-300 underline underline-offset-4 decoration-white/50">Mustafa Aktaş</span>
                 </div>
             </div>
+            
         </div>
     </footer>
     <script src="script.js"></script>
